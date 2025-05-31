@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes,Navigate, useLocation } from 'react-router-dom';
 import{Navbar, Home, Brands, Fragrance, DropDownMenu, Search, SignUp, Login, AdminHome,
-  OtpVerification, ForgotPassword, PageNotFound, Footer, UserProfile, Setting } from './AllComponents';
+  OtpVerification, ForgotPassword, PageNotFound, Footer, UserProfile, Setting,Skincare } from './AllComponents';
 import { AuthProvider, useAuth} from './component/context/AuthContext';
 
 const AppRoutes = () => {
@@ -30,6 +30,7 @@ const AppRoutes = () => {
         <Route path='/signUp' element={<SignUp/>} />
         <Route path='/login' element={<Login/>} />
         <Route path='/forgot-password' element={<ForgotPassword />} />
+        <Route path='/skincare' element={<Skincare />} />
 
         
         <Route path='OtpVerification/:type/:userId' element={<OtpVerification />} />

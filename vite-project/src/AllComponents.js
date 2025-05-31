@@ -13,3 +13,4 @@ export {default as Footer} from './component/Footer';
 export {default as UserProfile} from './component/UserData/UserProfile';
 export {default as Setting} from './component/UserData/Settings';
 export {default as AdminHome} from './component/Admin/AdminHome';
+export {default as Skincare} from './component/skincare/Skincare';

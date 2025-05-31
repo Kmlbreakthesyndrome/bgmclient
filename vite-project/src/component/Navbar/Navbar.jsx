@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
 import logo from '../../assets/website-logo/website Logo.png';
+import DropDownMenu from './DropDownMenu';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,7 +14,7 @@ export default function Navbar() {
 
   const NAVDATA = [
     { name: 'Skincare', href: '/skincare' },
-    { name: 'Brands', href: '/brands' },
+    { name: <DropDownMenu/> },
     { name: 'Fragrance', href: '/fragrance' },
   ];
 
@@ -47,7 +48,7 @@ export default function Navbar() {
       transition={{ type: 'spring', stiffness: 100 }}
       className="fixed w-full bg-gradient-to-r from-pink-50 to-pink-100 h-20 px-4 sm:px-8 md:px-16 lg:px-24 z-50 text-pink-900 border-b border-pink-200 shadow-sm backdrop-blur-sm bg-opacity-90"
     >
-      <div className="flex justify-between items-center h-full max-w-7xl mx-auto">
+      <div className="flex justify-between items-center h-full  mx-auto">
         {/* Logo */}
         <motion.div 
           whileHover={{ scale: 1.05 }}

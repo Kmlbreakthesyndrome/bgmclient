@@ -1,0 +1,15 @@
+export {default as Home} from './component/Home/Home';
+export {default as Brands} from './component/Brands';
+export {default as Fragrance} from './component/Fragrance';
+export {default as ForgotPassword} from './component/ForgotPassword';
+export {default as Login} from './component/Login/Login';
+export {default as Navbar} from './component/Navbar/Navbar';
+export {default as DropDownMenu} from './component/Navbar/DropDownMenu';
+export {default as Search} from './component/Navbar/Search'
+export {default as OtpVerification} from './component/OtpVerification';
+export {default as SignUp} from './component/SignUp/SignUp';
+export {default as PageNotFound} from './component/PageNotFound';
+export {default as Footer} from './component/Footer';
+export {default as UserProfile} from './component/UserData/UserProfile';
+export {default as Setting} from './component/UserData/Settings';
+export {default as AdminHome} from './component/Admin/AdminHome';
